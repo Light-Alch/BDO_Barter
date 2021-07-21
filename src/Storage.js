@@ -1,20 +1,12 @@
-//Structure for nodes
-class Node {
-  constructor(town) {
+//town object
+class town {
+  constructor(Name) {
     //current town
-    this.town = town;
-    //next town
-    this.next = null;
-  }
-}
-//linkedlist for towns
-class LinkedList {
-  constructor() {
-    //town
-    this.head = null;
-    //length of linkedlist
-    this.size = 0;
-    //linked list of barter items
+    this.town = Name;
+    this.silver = 0;
+    this.storageSize = 0;
+    this.usedStorage = 0;
+    //barter items by tier
     this.Tier1 = [
       "[Level 1] Dried Blue Rose	800001",
       "[Level 1] Giant Fish Bone	800002",
@@ -100,6 +92,16 @@ class LinkedList {
       "[Level 5] Otters Fish Hook	800074",
       "[Level 5] Observatory Report	800075"
     ];
+  }
+}
+//linkedlist for towns
+class LinkedList {
+  constructor() {
+    //town
+    this.head = null;
+    //length of linkedlist
+    this.size = 0;
+    //linked list of barter items
   }
 
   //add a new town
