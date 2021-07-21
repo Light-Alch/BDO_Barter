@@ -3,8 +3,8 @@ class town {
   constructor(Name) {
     //town
     this.town = Name;
-    //total silver worth in town from barter
-    //items
+    //total silver worth in 
+    //town from barter items
     this.silver = 0;
     //total storage
     this.storageSize = 0;
