@@ -1,10 +1,14 @@
 //town object
 class town {
   constructor(Name) {
-    //current town
+    //town
     this.town = Name;
+    //total silver worth in town from barter
+    //items
     this.silver = 0;
+    //total storage
     this.storageSize = 0;
+    //used storage slots
     this.usedStorage = 0;
     //barter items by tier
     this.Tier1 = [
