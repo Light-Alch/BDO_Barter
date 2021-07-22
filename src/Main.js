@@ -1,5 +1,5 @@
 import "./styles.css";
-import rose from "./assets/barter_items/800006.png";
+import rose from "./assets/barter_items/800001.png";
 export default function App() {
   return (
     <div className="App">
