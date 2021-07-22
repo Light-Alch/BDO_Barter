@@ -1,5 +1,5 @@
 import "./styles.css";
-import rose from "./assets/barter_items/800001.png";
+import coin from "./assets/icons/10.png";
 export default function App() {
   return (
     <div className="App">
@@ -12,7 +12,7 @@ export default function App() {
         Lifeskills<br></br>
         Settings<br></br>
       </p>
-      <img src={rose} alt="Blue Rose" />
+      <img src={coin} alt="Crow Coin" />
     </div>
   );
 }
