@@ -6,7 +6,7 @@ export default function App() {
       <h1>BDO Barter</h1>
       <h2>To Do's:</h2>
       <p>
-        Storage<br></br>
+        Storage - currently in progress<br></br>
         Central Market<br></br>
         List of Nodes<br></br>
         Lifeskills<br></br>
