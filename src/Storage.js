@@ -3,7 +3,7 @@ class town {
   constructor(Name) {
     //town
     this.town = Name;
-    //total silver worth in 
+    //total silver worth in
     //town from barter items
     this.silver = 0;
     //total storage
@@ -96,42 +96,5 @@ class town {
       "[Level 5] Otters Fish Hook	800074",
       "[Level 5] Observatory Report	800075"
     ];
-  }
-}
-//linkedlist for towns
-class LinkedList {
-  constructor() {
-    //town
-    this.head = null;
-    //length of linkedlist
-    this.size = 0;
-    //linked list of barter items
-  }
-
-  //add a new town
-  add(town) {
-    let node = new Node(town);
-    //store current node
-    var current;
-
-    // if list is Empty add the
-    // element and make it head
-    if (this.head == null) {
-      this.head = node;
-      //temporary need to create
-    } else {
-      current = this.head;
-
-      // iterate to the end of the
-      // list
-      while (current.next) {
-        current = current.next;
-      }
-
-      // add node
-      current.next = node;
-    }
-    //increment length of list
-    this.size++;
   }
 }
