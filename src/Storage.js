@@ -1,3 +1,4 @@
+import * as storage from "./storage.json";
 //town object
 class town {
   constructor(Name) {
@@ -14,6 +15,12 @@ class town {
   }
 }
 
+function read() {
+  let town = storage.town;
+  console.log("Town: " + town);
+  console.log("Silver: " + storage.silver);
+}
+read();
 function temp() {
   this.Tier1 = [
     "[Level 1] Dried Blue Rose	800001",
