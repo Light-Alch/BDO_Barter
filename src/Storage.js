@@ -15,6 +15,15 @@ class town {
     //barter items by tier
   }
 }
+//need to split the level from
+//the name
+class tier {
+  constructor(name) {
+    this.tier = name;
+    this.ID = 0;
+    this.total = 0;
+  }
+}
 
 function read() {
   //take what is in storage
@@ -24,10 +33,12 @@ function read() {
   //console prints
   let x = 0;
   while (town[x] != null) {
+    console.log("-----------------");
     console.log("Town: " + town[x].town);
     console.log("Silver: " + town[x].silver);
     console.log("Total Storage: " + town[x].storageSize);
     console.log("Used Storage: " + town[x].usedStorage);
+    console.log("Tier: " + town[x].town.tiers);
     x++;
   }
 }
