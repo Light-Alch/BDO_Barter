@@ -17,9 +17,19 @@ class town {
 }
 
 function read() {
+  //take what is in storage
+  //assign it to a variable
+  //array format
   let town = storage.towns;
-  console.log("Town: " + town[0].town);
-  console.log("Silver: " + town[0].silver);
+  //console prints
+  let x = 0;
+  while (town[x] != null) {
+    console.log("Town: " + town[x].town);
+    console.log("Silver: " + town[x].silver);
+    console.log("Total Storage: " + town[x].storageSize);
+    console.log("Used Storage: " + town[x].usedStorage);
+    x++;
+  }
 }
 read();
 function temp() {
