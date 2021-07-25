@@ -1,4 +1,5 @@
-import * as storage from "./storage.json";
+import storage from "./storage.json";
+//import* as storage from "./storage.json";
 //town object
 class town {
   constructor(Name) {
@@ -16,9 +17,9 @@ class town {
 }
 
 function read() {
-  let town = storage.town;
-  console.log("Town: " + town);
-  console.log("Silver: " + storage.silver);
+  let town = storage.towns;
+  console.log("Town: " + town[0].town);
+  console.log("Silver: " + town[0].silver);
 }
 read();
 function temp() {

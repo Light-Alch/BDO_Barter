@@ -1,10 +1,17 @@
 {
-  "town": "Iliya Island",
-  "silver": 0,
-  "storageSize": 0,
-  "usedStorage": 0,
-  "town": "Velia",
-  "silver": 0,
-  "storageSize": 0,
-  "usedStorage": 0
+  "towns": [
+    {
+      "town": "Iliya Island",
+      "silver": 0,
+      "storageSize": 0,
+      "usedStorage": 0,
+      "Tier1": {}
+    },
+    {
+      "town": "Velia",
+      "silver": 0,
+      "storageSize": 0,
+      "usedStorage": 0
+    }
+  ]
 }
