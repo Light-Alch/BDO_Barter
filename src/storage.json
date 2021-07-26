@@ -14,15 +14,16 @@
               "total": 5
             }
           ],
-           "level 2": [
-            {	
+          "level 2": [
+            {
               "name": "Islanders' Lunchbox",
               "ID": "800015",
               "total": 2
             }
           ]
-    }],
-    {
+        }
+      ],
+
       "town": "Velia",
       "silver": 0,
       "storageSize": 0,
