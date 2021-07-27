@@ -1,5 +1,6 @@
 import "./styles.css";
 import coin from "./assets/icons/10.png";
+
 export default function App() {
   return (
     <div className="App">
