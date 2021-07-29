@@ -30,6 +30,7 @@ function read() {
   //assign it to a variable
   //array format
   let town = storage.towns;
+  let tiers = storage.towns.tiers;
   //console prints
   let x = 0;
   while (town[x] != null) {
@@ -38,7 +39,7 @@ function read() {
     console.log("Silver: " + town[x].silver);
     console.log("Total Storage: " + town[x].storageSize);
     console.log("Used Storage: " + town[x].usedStorage);
-    console.log("Tier: " + town[x].town.tiers);
+    console.log("Tier: " + town[x].tiers[0].name);
     x++;
   }
 }

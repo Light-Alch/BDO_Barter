@@ -7,7 +7,7 @@
       "usedStorage": 0,
       "tiers": [
         {
-          "level 1": [
+          "Level 1": [
             {
               "name": "Dried Blue Rose",
               "ID": "800001",
@@ -22,12 +22,31 @@
             }
           ]
         }
-      ],
-
+      ]
+    },
+    {
       "town": "Velia",
       "silver": 0,
       "storageSize": 0,
-      "usedStorage": 0
+      "usedStorage": 0,
+      "tiers": [
+        {
+          "Level 1": [
+            {
+              "name": "Dried Blue Rose",
+              "ID": "800001",
+              "total": 5
+            }
+          ],
+          "level 2": [
+            {
+              "name": "Islanders' Lunchbox",
+              "ID": "800015",
+              "total": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
