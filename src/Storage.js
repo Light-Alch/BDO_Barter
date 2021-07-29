@@ -2,9 +2,9 @@ import storage from "./storage.json";
 //import* as storage from "./storage.json";
 //town object
 class town {
-  constructor(Name) {
+  constructor(name) {
     //town
-    this.town = Name;
+    this.town = name;
     //total silver worth in
     //town from barter items
     this.silver = 0;
@@ -20,7 +20,7 @@ class town {
 class tier {
   constructor(name) {
     this.tier = name;
-    this.ID = 0;
+    this.id = 0;
     this.total = 0;
   }
 }
@@ -30,18 +30,19 @@ function read() {
   //assign it to a variable
   //array format
   let town = storage.towns;
-  let tiers = town.tiers;
   //console prints
   let x = 0;
-
+  let tier = 0;
   while (town[x] != null) {
     console.log("-----------------");
     console.log("Town: " + town[x].town);
     console.log("Silver: " + town[x].silver);
     console.log("Total Storage: " + town[x].storageSize);
     console.log("Used Storage: " + town[x].usedStorage);
-    console.log("Tier: " + town[x].tiers[0]);
-    let eek = town[0].tiers[x + 2];
+    let eek = town[0].tiers[x];
+    for (let y = 0; y < Object.keys(town[x].tiers[0].level_1).length; y++) {
+      console.log("Tier: " + Object.keys(town[x].tiers[tier].level_1[0]));
+    }
     console.log(eek);
     x++;
   }
