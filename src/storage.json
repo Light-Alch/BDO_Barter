@@ -7,18 +7,397 @@
       "usedStorage": 0,
       "tiers": [
         {
-          "Level 1": [
+          "level_1": [
             {
               "name": "Dried Blue Rose",
-              "ID": "800001",
+              "id": "800001",
               "total": 5
+            },
+            {
+              "name": "Giant Fish Bone",
+              "id": "800002",
+              "total": 0
+            },
+            {
+              "name": "Naval Ration",
+              "id": "800003",
+              "total": 0
+            },
+            {
+              "name": "Stained Seagull Figurine",
+              "id": "800004",
+              "total": 0
+            },
+            {
+              "name": "Raft Toy",
+              "id": "800005",
+              "total": 0
+            },
+            {
+              "name": "Chewy Raw Gizzard",
+              "id": "800006",
+              "total": 0
+            },
+            {
+              "name": "Ancient Urn Piece",
+              "id": "800007",
+              "total": 0
+            },
+            {
+              "name": "Unidentified Ancient Mural",
+              "id": "800008",
+              "total": 0
+            },
+            {
+              "name": "Cherry Tree Seed Pouch",
+              "id": "800009",
+              "total": 0
+            },
+            {
+              "name": "Golden Sand",
+              "id": "800010",
+              "total": 0
+            },
+            {
+              "name": "Roa Flower Seed Pouch",
+              "id": "800011",
+              "total": 0
+            },
+            {
+              "name": "Rakeflower Seed Pouch",
+              "id": "800012",
+              "total": 0
+            },
+            {
+              "name": "Fertile Soil",
+              "id": "800013",
+              "total": 0
+            },
+            {
+              "name": "Pirates' Gunpowder",
+              "id": "800014",
+              "total": 0
             }
-          ],
-          "level 2": [
+          ]
+        },
+        {
+          "level_2": [
             {
               "name": "Islanders' Lunchbox",
-              "ID": "800015",
-              "total": 2
+              "id": "800015",
+              "total": 0
+            },
+            {
+              "name": "Cron Castle Gold Coin",
+              "id": "800016",
+              "total": 0
+            },
+            {
+              "name": "Pirate Ship Mast",
+              "id": "800017",
+              "total": 0
+            },
+            {
+              "name": "Opulent Marble",
+              "id": "800018",
+              "total": 0
+            },
+            {
+              "name": "Filtered Drinking Water",
+              "id": "800019",
+              "total": 0
+            },
+            {
+              "name": "Conch Shell Ornament",
+              "id": "800020",
+              "total": 0
+            },
+            {
+              "name": "Supreme Oyster Box",
+              "id": "800021",
+              "total": 0
+            },
+            {
+              "name": "Big Stone Slab",
+              "id": "800022",
+              "total": 0
+            },
+            {
+              "name": "Narvo Sea Cucumber",
+              "id": "800023",
+              "total": 0
+            },
+            {
+              "name": "Balanced Stone Pagoda",
+              "id": "800024",
+              "total": 0
+            },
+            {
+              "name": "Sea Survival Kit",
+              "id": "800025",
+              "total": 0
+            },
+            {
+              "name": "Monster Tentacle",
+              "id": "800026",
+              "total": 0
+            },
+            {
+              "name": "Pirate Gold Coin",
+              "id": "800027",
+              "total": 0
+            },
+            {
+              "name": "Urchin Spine",
+              "id": "800028",
+              "total": 0
+            }
+          ]
+        },
+        {
+          "level_3": [
+            {
+              "name": "Old Hourglass",
+              "id": "800029",
+              "total": 0
+            },
+            {
+              "name": "Torn Pirate Treasure Map",
+              "id": "800030",
+              "total": 0
+            },
+            {
+              "name": "Pirates' Supply Box",
+              "id": "800031",
+              "total": 0
+            },
+            {
+              "name": "Scout Binoculars",
+              "id": "800032",
+              "total": 0
+            },
+            {
+              "name": "Stalactite Fragment",
+              "id": "800033",
+              "total": 0
+            },
+            {
+              "name": "Skull Decorated Teacup",
+              "id": "800034",
+              "total": 0
+            },
+            {
+              "name": "Round Knife",
+              "id": "800035",
+              "total": 0
+            },
+            {
+              "name": "Gooey Monster Blood",
+              "id": "800036",
+              "total": 0
+            },
+            {
+              "name": "Weasel Leather Coat",
+              "id": "800037",
+              "total": 0
+            },
+            {
+              "name": "Skull Symbol Carpet",
+              "id": "800038",
+              "total": 0
+            },
+            {
+              "name": "Rare Herb Pile",
+              "id": "800039",
+              "total": 0
+            },
+            {
+              "name": "Lopters Fishnet",
+              "id": "800040",
+              "total": 0
+            },
+            {
+              "name": "Ancient Orders",
+              "id": "800041",
+              "total": 0
+            },
+            {
+              "name": "Blue Candle Bundle",
+              "id": "800042",
+              "total": 0
+            }
+          ]
+        },
+        {
+          "level_4": [
+            {
+              "name": "Marine Knights' Helm",
+              "id": "800043",
+              "total": 0
+            },
+            {
+              "name": "Stolen Pirate Dagger",
+              "id": "800044",
+              "total": 0
+            },
+            {
+              "name": "Opulent Thread Spool",
+              "id": "800045",
+              "total": 0
+            },
+            {
+              "name": "Amethyst Fragment",
+              "id": "800046",
+              "total": 0
+            },
+            {
+              "name": "Marine Knights' Spear",
+              "id": "800047",
+              "total": 0
+            },
+            {
+              "name": "Solidified Lava",
+              "id": "800048",
+              "total": 0
+            },
+            {
+              "name": "Green Salt Lump",
+              "id": "800049",
+              "total": 0
+            },
+            {
+              "name": "Boatman's Manual",
+              "id": "800050",
+              "total": 0
+            },
+            {
+              "name": "Old Chest with Gold Coins",
+              "id": "800051",
+              "total": 0
+            },
+            {
+              "name": "Seashell Deco",
+              "id": "800052",
+              "total": 0
+            },
+            {
+              "name": "Panacea",
+              "id": "800053",
+              "total": 0
+            },
+            {
+              "name": "Headless Dragon Figurine",
+              "id": "800054",
+              "total": 0
+            },
+            {
+              "name": "Bronze Candlestick",
+              "id": "800055",
+              "total": 0
+            },
+            {
+              "name": "Pirate's Key",
+              "id": "800056",
+              "total": 0
+            }
+          ]
+        },
+        {
+          "level_5": [
+            {
+              "name": "Octagonal Box",
+              "id": "800057",
+              "total": 0
+            },
+            {
+              "name": "37 Year Old Herbal Wine",
+              "id": "800058",
+              "total": 0
+            },
+            {
+              "name": "Azure Quartz",
+              "id": "800059",
+              "total": 0
+            },
+            {
+              "name": "Taxidermied Morpho Butterfly",
+              "id": "800060",
+              "total": 0
+            },
+            {
+              "name": "Statue's Tear",
+              "id": "800061",
+              "total": 0
+            },
+            {
+              "name": "Supreme Gold Candlestick",
+              "id": "800062",
+              "total": 0
+            },
+            {
+              "name": "Faded Gold Dragon Figurine",
+              "id": "800063",
+              "total": 0
+            },
+            {
+              "name": "Taxidermied White Caterpillar",
+              "id": "800064",
+              "total": 0
+            },
+            {
+              "name": "Golden Fish Scale",
+              "id": "800065",
+              "total": 0
+            },
+            {
+              "name": "102 Year Old Golden Herb",
+              "id": "800066",
+              "total": 0
+            },
+            {
+              "name": "Portrait of the Ancient",
+              "id": "800067",
+              "total": 0
+            },
+            {
+              "name": "Elixir of Youth",
+              "id": "800068",
+              "total": 0
+            },
+            {
+              "name": "Luxury Patterned Fabric",
+              "id": "800069",
+              "total": 0
+            },
+            {
+              "name": "Mysterious Rock",
+              "id": "800070",
+              "total": 0
+            },
+            {
+              "name": "Opulent Coral Trinket",
+              "id": "800071",
+              "total": 0
+            },
+            {
+              "name": "Cox Pirates' Journal",
+              "id": "800072",
+              "total": 0
+            },
+            {
+              "name": "Rust Repair Tool",
+              "id": "800073",
+              "total": 0
+            },
+            {
+              "name": "Otters Fish Hook",
+              "id": "800074",
+              "total": 0
+            },
+            {
+              "name": "Observatory Report",
+              "id": "800075",
+              "total": 0
             }
           ]
         }
@@ -31,20 +410,18 @@
       "usedStorage": 0,
       "tiers": [
         {
-          "Level 1": [
-            {
-              "name": "Dried Blue Rose",
-              "ID": "800001",
-              "total": 5
-            }
-          ],
-          "level 2": [
-            {
-              "name": "Islanders' Lunchbox",
-              "ID": "800015",
-              "total": 2
-            }
-          ]
+          "level_1": {
+            "name": "Dried Blue Rose",
+            "id": "800001",
+            "total": 5
+          }
+        },
+        {
+          "level_2": {
+            "name": "Islanders' Lunchbox",
+            "id": "800015",
+            "total": 2
+          }
         }
       ]
     }
