@@ -41,7 +41,9 @@ function read() {
     console.log("Used Storage: " + town[x].usedStorage);
     let eek = town[0].tiers[x];
     for (let y = 0; y < Object.keys(town[x].tiers[0].level_1).length; y++) {
-      console.log("Tier: " + Object.keys(town[x].tiers[tier].level_1[0]));
+      console.log(
+        "Tier " + x + ": " + Object.values(town[x].tiers[tier].level_1[y])
+      );
     }
     console.log(eek);
     x++;
