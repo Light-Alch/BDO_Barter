@@ -33,19 +33,24 @@ function read() {
   //console prints
   let x = 0;
   let tier = 0;
-  while (town[x] != null) {
+  // the and is to stop it from going out of bounds
+  //so will eventually need to find the # of towns for x
+  //ex: x < towns.length
+  while (town[x] != null && x < Object.keys(town).length - 1) {
     console.log("-----------------");
     console.log("Town: " + town[x].town);
     console.log("Silver: " + town[x].silver);
     console.log("Total Storage: " + town[x].storageSize);
     console.log("Used Storage: " + town[x].usedStorage);
-    let eek = town[0].tiers[x];
-    for (let y = 0; y < Object.keys(town[x].tiers[0].level_1).length; y++) {
-      console.log(
-        "Tier " + x + ": " + Object.values(town[x].tiers[tier].level_1[y])
-      );
+    let level = "level_" + (x + 1);
+    console.log(level);
+    for (let y = 0; y < Object.keys(town[x].tiers[x].level_1).length; y++) {
+      //console.log(
+      //"Tier " + (x + 1) + ": " + Object.values(town[x].tiers[tier].level_1[y])
+      //);
+      console.log(town[x].tiers[x].level_1[y].name);
     }
-    console.log(eek);
+
     x++;
   }
 }
