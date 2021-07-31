@@ -36,15 +36,24 @@ function read() {
   // the and is to stop it from going out of bounds
   //so will eventually need to find the # of towns for x
   //ex: x < towns.length
-  while (town[x] != null && x < Object.keys(town).length - 1) {
+  while (town[x] != null) {
     console.log("-----------------");
     console.log("Town: " + town[x].town);
     console.log("Silver: " + town[x].silver);
     console.log("Total Storage: " + town[x].storageSize);
     console.log("Used Storage: " + town[x].usedStorage);
-    let level = "level_" + (x + 1);
-    console.log(level);
-    for (let y = 0; y < Object.keys(town[x].tiers[x].level_1).length; y++) {
+    console.log("towns #: " + Object.keys(town).length);
+    console.log("X:" + x);
+    //constant issue of not changing level
+    //Object.keys(town[x].tiers[x].level_1
+    //need to find a work around, inner function maybe?
+    for (
+      let y = 0;
+      x < Object.keys(town).length - 1 &&
+      y < Object.keys(town[x].tiers[x].level_1).length;
+      y++
+    ) {
+      console.log("y:" + y);
       //console.log(
       //"Tier " + (x + 1) + ": " + Object.values(town[x].tiers[tier].level_1[y])
       //);
