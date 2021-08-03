@@ -48,29 +48,29 @@ function read() {
     //constant issue of not changing level
     //Object.keys(town[x].tiers[x].level_1
     //need to find a work around, inner function maybe?
-    for (
-      let y = 0;
-      x < Object.keys(town).length - 1 &&
-      y < Object.keys(town[x].tiers[x].level_1).length;
-      y++
-    ) {
-      //console.log(
-      //"Tier " + (x + 1) + ": " + Object.values(town[x].tiers[tier].level_1[y])
-      //);
-      console.log("[level 1]" + town[x].tiers[x].level_1[y].name);
-    }
+    // for (
+    //  let y = 0;
+    //  x < Object.keys(town).length - 1 &&
+    // y < (Object.keys(town[x].tiers[x].level_1).length);
+    // y++
+    //) {
+    //console.log(
+    //"Tier " + (x + 1) + ": " + Object.values(town[x].tiers[tier].level_1[y])
+    //);
+    // console.log("[level 1]" + town[x].tiers[x].level_1[y].name);
+    //}
     //practice to access other tiers
-    for (
-      let y = 0;
-      x < Object.keys(town).length - 1 &&
-      y < Object.keys(town[x].tiers[x].level_1).length;
-      y++
-    ) {
-      //console.log(
-      //"Tier " + (x + 1) + ": " + Object.values(town[x].tiers[tier].level_1[y])
-      //);
-      console.log("[level 2]" + town[x].tiers[x + 1].level_2[y].name);
-    }
+    //for (
+    //  let y = 0;
+    //  x < Object.keys(town).length - 1 &&
+    //  y < Object.keys(town[x].tiers[x].level_1).length;
+    //  y++
+    //) {
+    //console.log(
+    //"Tier " + (x + 1) + ": " + Object.values(town[x].tiers[tier].level_1[y])
+    //);
+    // console.log("[level 2]" + town[x].tiers[x + 1].level_2[y].name);
+    //}
 
     x++;
   }
