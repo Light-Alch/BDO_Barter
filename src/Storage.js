@@ -42,8 +42,9 @@ function read() {
     console.log("Silver: " + town[x].silver);
     console.log("Total Storage: " + town[x].storageSize);
     console.log("Used Storage: " + town[x].usedStorage);
-    console.log("towns #: " + Object.keys(town).length);
-    console.log("X:" + x);
+    //console.log("towns #: " + Object.keys(town).length);
+    //console.log("X:" + x);
+    console.log(town[x].town + " length:" + Object.keys(town).length);
     //constant issue of not changing level
     //Object.keys(town[x].tiers[x].level_1
     //need to find a work around, inner function maybe?
@@ -56,7 +57,7 @@ function read() {
       //console.log(
       //"Tier " + (x + 1) + ": " + Object.values(town[x].tiers[tier].level_1[y])
       //);
-      console.log("[level 1]" +town[x].tiers[x].level_1[y].name);
+      console.log("[level 1]" + town[x].tiers[x].level_1[y].name);
     }
     //practice to access other tiers
     for (
@@ -68,7 +69,7 @@ function read() {
       //console.log(
       //"Tier " + (x + 1) + ": " + Object.values(town[x].tiers[tier].level_1[y])
       //);
-      console.log("[level 2]" +town[x].tiers[x+1].level_2[y].name);
+      console.log("[level 2]" + town[x].tiers[x + 1].level_2[y].name);
     }
 
     x++;
