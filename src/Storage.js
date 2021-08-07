@@ -46,6 +46,7 @@ function read() {
     let y = 0;
     let tiers = 0;
     //loop through the tiers
+    console.log("----Inventory----");
     while (tiers < 5) {
       if (
         y < Object.keys(town[x].tiers[tiers].level_1 || {}).length &&
