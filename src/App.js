@@ -1,5 +1,8 @@
 import "./styles.css";
 import coin from "./assets/icons/10.png";
+import Storage from "./Storage";
+import React from "react";
+import { StyleSheet, Text, FlatList } from "react-native";
 
 export default function App() {
   return (
@@ -13,6 +16,7 @@ export default function App() {
         Lifeskills<br></br>
         Settings<br></br>
       </p>
+
       <img src={coin} alt="Crow Coin" />
     </div>
   );

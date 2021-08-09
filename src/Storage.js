@@ -1,7 +1,8 @@
 import storage from "./storage.json";
+import React from "react";
 //import* as storage from "./storage.json";
 //town object
-class town {
+class Town {
   constructor(name) {
     //town
     this.town = name;
@@ -25,7 +26,7 @@ class tier {
   }
 }
 
-function read() {
+function Read() {
   //take what is in storage
   //assign it to a variable
   //array format
@@ -81,7 +82,7 @@ function read() {
       }
       //this poses an issue with tier 5 barter items
       //since there is more than 14 items
-      if (y === 14) {
+      if (y === 14 || y === 19) {
         y = 0;
         tiers++;
       }
@@ -90,4 +91,7 @@ function read() {
     x++;
   }
 }
-read();
+//Read();
+//how to write to json
+function Write() {}
+//Write();
