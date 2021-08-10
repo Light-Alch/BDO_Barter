@@ -21,3 +21,23 @@ export default function App() {
     </div>
   );
 }
+
+/*  <div class="sidenav">
+ <ul>
+  <li>  
+    <a href="#"> Storage </a>  
+  </li> 
+  <li>  
+    <a href="#"> Central Market </a>  
+  </li> 
+  <li>  
+    <a href="#"> Nodes </a>  
+  </li> 
+  <li>  
+    <a href="#"> Lifeskills </a>  
+  </li> 
+  <li>  
+    <a href="#"> Settings </a>  
+  </li> 
+ </ul>
+</div>  */
