@@ -28,11 +28,22 @@ class tier {
 
 function readMap() {
   let townMap = new Map(Object.entries(storage.towns));
-  let key = 0;
+  let tiers = 0,
+    y = 0;
   //console.log(townMap);
-  console.log(townMap.get("0").silver);
-  townMap.get("0").silver = 2000;
-  console.log(townMap.get("0").silver);
+  console.log("-----------------");
+  console.log("Town: " + townMap.get("0").town);
+  console.log("Silver: " + townMap.get("0").silver);
+  //update values example
+  //townMap.get("0").silver = 2000;
+  console.log("Total Storage: " + townMap.get("0").storageSize);
+  console.log("Used Storage: " + townMap.get("0").usedStorage);
+  console.log("----Inventory----");
+  console.log("[Level 1] " + townMap.get("0").tiers[0].level_1[0].name);
+  //console.log("Total: "+townMap.get("0").tiers[0].level_1[0].total);
+  //testing how to update the tiers
+  //townMap.get("0").tiers[0].level_1[0].total = 0;
+  //console.log("[Level 1] "+townMap.get("0").tiers[0].level_1[0].total);
 }
 readMap();
 function Read() {
