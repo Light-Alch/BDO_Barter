@@ -26,10 +26,20 @@ class tier {
   }
 }
 
+function readMap() {
+  let townMap = new Map(Object.entries(storage.towns));
+  let key = 0;
+  //console.log(townMap);
+  console.log(townMap.get("0").silver);
+  townMap.get("0").silver = 2000;
+  console.log(townMap.get("0").silver);
+}
+readMap();
 function Read() {
   //take what is in storage
   //assign it to a variable
   //array format
+
   let town = storage.towns;
 
   //console prints
@@ -92,6 +102,3 @@ function Read() {
   }
 }
 //Read();
-//how to write to json
-function Write() {}
-//Write();
