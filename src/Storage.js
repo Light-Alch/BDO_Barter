@@ -1,5 +1,5 @@
 import storage from "./storage.json";
-import React from "react";
+//import React from "react";
 //import* as storage from "./storage.json";
 //town object
 class Town {
@@ -39,77 +39,92 @@ function readMap() {
   console.log("Total Storage: " + townMap.get("0").storageSize);
   console.log("Used Storage: " + townMap.get("0").usedStorage);
   console.log("----Inventory----");
-  console.log("[Level 1] " + townMap.get("0").tiers[0].level_1[0].name);
+  console.log("[Level 1] " + townMap.get("0").tiers[tiers].level_1[y].name);
+  return townMap;
   //console.log("Total: "+townMap.get("0").tiers[0].level_1[0].total);
   //testing how to update the tiers
   //townMap.get("0").tiers[0].level_1[0].total = 0;
   //console.log("[Level 1] "+townMap.get("0").tiers[0].level_1[0].total);
 }
 readMap();
-function Read() {
-  //take what is in storage
-  //assign it to a variable
-  //array format
 
-  let town = storage.towns;
+function writeMap(saveMap) {
+  var fs = require("fs");
 
-  //console prints
-  let x = 0;
-
-  while (town[x] != null) {
-    console.log("-----------------");
-    console.log("Town: " + town[x].town);
-    console.log("Silver: " + town[x].silver);
-    console.log("Total Storage: " + town[x].storageSize);
-    console.log("Used Storage: " + town[x].usedStorage);
-    //console.log("towns #: " + Object.keys(town[x].tiers[x].level_1).length);
-    //console.log("X:" + x);
-    //tiers loop
-    let y = 0;
-    let tiers = 0;
-    //loop through the tiers
-    console.log("----Inventory----");
-    while (tiers < 5) {
-      if (
-        y < Object.keys(town[x].tiers[tiers].level_1 || {}).length &&
-        tiers === 0
-      ) {
-        console.log("[level 1]" + town[x].tiers[tiers].level_1[y].name);
-        y++;
-      } else if (
-        y < Object.keys(town[x].tiers[tiers].level_2 || {}).length &&
-        tiers === 1
-      ) {
-        console.log("[level 2]" + town[x].tiers[tiers].level_2[y].name);
-        y++;
-      } else if (
-        y < Object.keys(town[x].tiers[tiers].level_3 || {}).length &&
-        tiers === 2
-      ) {
-        console.log("[level 3]" + town[x].tiers[tiers].level_3[y].name);
-        y++;
-      } else if (
-        y < Object.keys(town[x].tiers[tiers].level_4 || {}).length &&
-        tiers === 3
-      ) {
-        console.log("[level 4]" + town[x].tiers[tiers].level_4[y].name);
-        y++;
-      } else if (
-        y < Object.keys(town[x].tiers[tiers].level_5 || {}).length &&
-        tiers === 4
-      ) {
-        console.log("[level 5]" + town[x].tiers[tiers].level_5[y].name);
-        y++;
-      }
-      //this poses an issue with tier 5 barter items
-      //since there is more than 14 items
-      if (y === 14 || y === 19) {
-        y = 0;
-        tiers++;
-      }
+  fs.writeFile("./object.json", JSON.stringify(saveMap, null, 4), (err) => {
+    if (err) {
+      console.error(err);
+      return;
     }
-    tiers = 0;
-    x++;
-  }
+    console.log("File has been created");
+  });
 }
+writeMap(readMap);
+
+//function Read() {
+//take what is in storage
+//assign it to a variable
+//array format
+
+//let town = storage.towns;
+
+//console prints
+//let x = 0;
+
+//while (town[x] != null) {
+//console.log("-----------------");
+//console.log("Town: " + town[x].town);
+//console.log("Silver: " + town[x].silver);
+//console.log("Total Storage: " + town[x].storageSize);
+//console.log("Used Storage: " + town[x].usedStorage);
+//console.log("towns #: " + Object.keys(town[x].tiers[x].level_1).length);
+//console.log("X:" + x);
+//tiers loop
+//let y = 0;
+//let tiers = 0;
+//loop through the tiers
+//console.log("----Inventory----");
+//while (tiers < 5) {
+//if (
+// y < Object.keys(town[x].tiers[tiers].level_1 || {}).length &&
+//  tiers === 0
+//) {
+//  console.log("[level 1]" + town[x].tiers[tiers].level_1[y].name);
+//  y++;
+//} else if (
+//  y < Object.keys(town[x].tiers[tiers].level_2 || {}).length &&
+//  tiers === 1
+//) {
+// console.log("[level 2]" + town[x].tiers[tiers].level_2[y].name);
+// y++;
+//} else if (
+// y < Object.keys(town[x].tiers[tiers].level_3 || {}).length &&
+// tiers === 2
+//) {
+//  console.log("[level 3]" + town[x].tiers[tiers].level_3[y].name);
+//  y++;
+//} else if (
+// y < Object.keys(town[x].tiers[tiers].level_4 || {}).length &&
+//  tiers === 3
+//) {
+//  console.log("[level 4]" + town[x].tiers[tiers].level_4[y].name);
+//  y++;
+//} else if (
+//  y < Object.keys(town[x].tiers[tiers].level_5 || {}).length &&
+//  tiers === 4
+//) {
+//  console.log("[level 5]" + town[x].tiers[tiers].level_5[y].name);
+//  y++;
+//}
+//this poses an issue with tier 5 barter items
+//since there is more than 14 items
+//// if (y === 14 || y === 19) {
+//  y = 0;
+//  tiers++;
+// }
+//}
+//tiers = 0;
+//x++;
+//}
+//}
 //Read();

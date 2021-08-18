@@ -1,8 +1,8 @@
 import "./styles.css";
 import coin from "./assets/icons/10.png";
-import Storage from "./Storage";
+//import Storage from "./Storage";
 import React from "react";
-import { StyleSheet, Text, FlatList } from "react-native";
+//import { StyleSheet, Text, FlatList } from "react-native";
 
 export default function App() {
   return (
@@ -17,7 +17,9 @@ export default function App() {
         Settings<br></br>
       </p>
 
-      <img src={coin} alt="Crow Coin" />
+      <a href={coin} download>
+        <img src={coin} alt="Crow Coin" />
+      </a>
     </div>
   );
 }
