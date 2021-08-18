@@ -1,6 +1,6 @@
 import "./styles.css";
 import coin from "./assets/icons/10.png";
-//import Storage from "./Storage";
+import Storage from "./Storage";
 import React from "react";
 //import { StyleSheet, Text, FlatList } from "react-native";
 
