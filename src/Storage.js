@@ -50,7 +50,10 @@ function readMap() {
       ) {
         //console.log("here");
         console.log(
-          "[level 1]" + townMap.get(key).tiers[tiers].level_1[y].name
+          "[level 1]" +
+            townMap.get(key).tiers[tiers].level_1[y].name +
+            " " +
+            townMap.get(key).tiers[tiers].level_1[y].total
         );
         y++;
       } else if (
