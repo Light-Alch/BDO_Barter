@@ -31,16 +31,69 @@ function readMap() {
   let tiers = 0,
     y = 0;
   //console.log(townMap);
-  console.log("-----------------");
-  console.log("Town: " + townMap.get("0").town);
-  console.log("Silver: " + townMap.get("0").silver);
-  //update values example
-  //townMap.get("0").silver = 2000;
-  console.log("Total Storage: " + townMap.get("0").storageSize);
-  console.log("Used Storage: " + townMap.get("0").usedStorage);
-  console.log("----Inventory----");
-  console.log("[Level 1] " + townMap.get("0").tiers[tiers].level_1[y].name);
-  return townMap;
+  //return townMap;
+  for (let [key] of townMap) {
+    console.log("-----------------");
+    console.log("Town: " + townMap.get(key).town);
+    console.log("Silver: " + townMap.get(key).silver);
+    //update values example
+    //townMap.get("0").silver = 2000;
+    console.log("Total Storage: " + townMap.get(key).storageSize);
+    console.log("Used Storage: " + townMap.get(key).usedStorage);
+    console.log("----Inventory----");
+    console.log(Object.keys(townMap.get(key) || {}).length);
+    console.log(tiers === 0);
+    //console.log(Object.keys(townMap.get(key)||{}).length);
+    //console.log("[Level 1] " + townMap.get(key).tiers[tiers].level_1[y].name);
+    while (tier < Object.keys(townMap.get(key) || {}).length) {
+      if (
+        y < Object.keys(townMap.get(key).tiers[tiers].level_1 || {}).length &&
+        tiers === 0
+      ) {
+        console.log("here");
+        console.log(
+          "[level 1]" + townMap.get(key).tiers[tiers].level_1[y].name
+        );
+        y++;
+      } else if (
+        y < Object.keys(townMap.get(key).tiers[tiers].level_2 || {}).length &&
+        tiers === 1
+      ) {
+        console.log(
+          "[level 2]" + townMap.get(key).tiers[tiers].level_2[y].name
+        );
+        y++;
+      } else if (
+        y < Object.keys(townMap.get(key).tiers[tiers].level_3 || {}).length &&
+        tiers === 2
+      ) {
+        console.log(
+          "[level 3]" + townMap.get(key).tiers[tiers].level_3[y].name
+        );
+        y++;
+      } else if (
+        y < Object.keys(townMap.get(key).tiers[tiers].level_4 || {}).length &&
+        tiers === 3
+      ) {
+        console.log(
+          "[level 4]" + townMap.get(key).tiers[tiers].level_4[y].name
+        );
+        y++;
+      } else if (
+        y < Object.keys(townMap.get(key).tiers[tiers].level_5 || {}).length &&
+        tiers === 4
+      ) {
+        console.log(
+          "[level 5]" + townMap.get(key).tiers[tiers].level_5[y].name
+        );
+        y++;
+      }
+      if (y === 14 || y === 19) {
+        y = 0;
+        tiers++;
+      }
+    }
+  }
   //console.log("Total: "+townMap.get("0").tiers[0].level_1[0].total);
   //testing how to update the tiers
   //townMap.get("0").tiers[0].level_1[0].total = 0;
@@ -59,7 +112,7 @@ function writeMap(saveMap) {
     console.log("File has been created");
   });
 }
-writeMap(readMap);
+//writeMap(readMap);
 
 //function Read() {
 //take what is in storage
