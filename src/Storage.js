@@ -41,16 +41,14 @@ function readMap() {
     console.log("Total Storage: " + townMap.get(key).storageSize);
     console.log("Used Storage: " + townMap.get(key).usedStorage);
     console.log("----Inventory----");
-    console.log(Object.keys(townMap.get(key) || {}).length);
-    console.log(tiers === 0);
     //console.log(Object.keys(townMap.get(key)||{}).length);
     //console.log("[Level 1] " + townMap.get(key).tiers[tiers].level_1[y].name);
-    while (tier < Object.keys(townMap.get(key) || {}).length) {
+    while (tiers < Object.keys(townMap.get(key) || {}).length) {
       if (
         y < Object.keys(townMap.get(key).tiers[tiers].level_1 || {}).length &&
         tiers === 0
       ) {
-        console.log("here");
+        //console.log("here");
         console.log(
           "[level 1]" + townMap.get(key).tiers[tiers].level_1[y].name
         );
@@ -93,6 +91,7 @@ function readMap() {
         tiers++;
       }
     }
+    tiers = 0;
   }
   //console.log("Total: "+townMap.get("0").tiers[0].level_1[0].total);
   //testing how to update the tiers
