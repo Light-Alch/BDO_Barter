@@ -41,8 +41,6 @@ function readMap() {
     console.log("Total Storage: " + townMap.get(key).storageSize);
     console.log("Used Storage: " + townMap.get(key).usedStorage);
     console.log("----Inventory----");
-    //console.log(Object.keys(townMap.get(key)||{}).length);
-    //console.log("[Level 1] " + townMap.get(key).tiers[tiers].level_1[y].name);
     while (tiers < Object.keys(townMap.get(key) || {}).length) {
       if (
         y < Object.keys(townMap.get(key).tiers[tiers].level_1 || {}).length &&
@@ -56,6 +54,10 @@ function readMap() {
             townMap.get(key).tiers[tiers].level_1[y].total
         );
         y++;
+        if (y === 14) {
+          y = 0;
+          tiers++;
+        }
       } else if (
         y < Object.keys(townMap.get(key).tiers[tiers].level_2 || {}).length &&
         tiers === 1
@@ -64,6 +66,10 @@ function readMap() {
           "[level 2]" + townMap.get(key).tiers[tiers].level_2[y].name
         );
         y++;
+        if (y === 14) {
+          y = 0;
+          tiers++;
+        }
       } else if (
         y < Object.keys(townMap.get(key).tiers[tiers].level_3 || {}).length &&
         tiers === 2
@@ -72,6 +78,10 @@ function readMap() {
           "[level 3]" + townMap.get(key).tiers[tiers].level_3[y].name
         );
         y++;
+        if (y === 14) {
+          y = 0;
+          tiers++;
+        }
       } else if (
         y < Object.keys(townMap.get(key).tiers[tiers].level_4 || {}).length &&
         tiers === 3
@@ -80,6 +90,10 @@ function readMap() {
           "[level 4]" + townMap.get(key).tiers[tiers].level_4[y].name
         );
         y++;
+        if (y === 14) {
+          y = 0;
+          tiers++;
+        }
       } else if (
         y < Object.keys(townMap.get(key).tiers[tiers].level_5 || {}).length &&
         tiers === 4
@@ -88,10 +102,10 @@ function readMap() {
           "[level 5]" + townMap.get(key).tiers[tiers].level_5[y].name
         );
         y++;
-      }
-      if (y === 14 || y === 19) {
-        y = 0;
-        tiers++;
+        if (y === 19) {
+          y = 0;
+          tiers++;
+        }
       }
     }
     tiers = 0;
